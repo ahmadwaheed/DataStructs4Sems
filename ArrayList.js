@@ -32,8 +32,8 @@ class ArrayList {
 	}
 
 	collapseTo(index) {
-		for(let i=index; i<this.length; i++) {
-			this.data[i] = this.data[i + 1];
+		for(let i=index; i<this.length; i++) { //array starts from index 0
+			this.data[i] = this.data[i + 1];   // thats why we have to add 1
 		}
 		
 		delete this.data[this.length - 1];
