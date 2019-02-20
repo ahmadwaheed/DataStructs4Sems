@@ -4,9 +4,7 @@
 //Even numbers will stay in the list
 const filterOutOdds = nums => nums.filter(num => num % 2 === 0);
 
-
 const filterState = (list, state) => list.filter(person => person.state === state);
-
 
 const myFilter = (list, fn) => {
 	const answer = [];
